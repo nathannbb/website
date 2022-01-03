@@ -8,6 +8,7 @@ import {
   Stack,
   Box,
   useColorModeValue,
+  Image,
 }from '@chakra-ui/react'
 import NextLink from 'next/link'
 

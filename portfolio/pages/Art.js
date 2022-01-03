@@ -8,7 +8,9 @@ import {
   Stack,
   Box,
   useColorModeValue,
+  Image,
 }from '@chakra-ui/react'
+import NextLink from 'next/link'
 
 export default function Art() {
   const {colorMode} = useColorMode()
@@ -56,6 +58,20 @@ export default function Art() {
               My Art
             </Text>
           </Heading>
+
+          <Heading mb={4}>
+            <Text fontSize={24}>
+              Game Concept Page
+            </Text>
+          </Heading>
+          <Box boxSize="md">
+            <Flex mb={4}>
+              <Image src='images/alone.png'></Image>
+            </Flex>
+            <Text style={{ textIndent: 20 }}>
+              A concept page for a game I have been designing named Alone. This concept page was created as an assignment for an amazing course by Kristopher Alexander called Introduction to Game Design.
+            </Text>
+          </Box>
         </Flex>
       </Stack>
 

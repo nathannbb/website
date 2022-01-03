@@ -9,6 +9,7 @@ import {
   Box,
   useColorModeValue,
 }from '@chakra-ui/react'
+import NextLink from 'next/link'
 
 export default function Contact() {
   const {colorMode} = useColorMode()
@@ -56,6 +57,22 @@ export default function Contact() {
               Contact Me
             </Text>
           </Heading>
+          <Flex>
+            <Heading fontSize={18}>
+              Email:
+            </Heading>
+            <Text style={{ textIndent: 20 }}>
+              nathanbasant.nb@gmail.com
+            </Text>
+          </Flex>
+          <Flex mt={4}>
+            <Heading fontSize={18}>
+              LinkedIn:
+            </Heading>
+            <NextLink href='https://www.linkedin.com/in/nathanbasant/' passHref>
+              <Text style={{ textIndent: 20 }}>linkedin.com/in/nathanbasant/</Text>
+            </NextLink>
+          </Flex>
         </Flex>
       </Stack>
 

@@ -87,13 +87,6 @@ const Container = ({ children }) => {
                                 </Text>
                             </Button>
                         </NextLink>
-                        <NextLink href='/Projects' passHref>
-                            <Button as="a" variant="ghost" p={[6,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
-                                <Text fontWeight="normal" color={color[colorMode]}>
-                                    Projects
-                                </Text>
-                            </Button>
-                        </NextLink>
                         <NextLink href='/Contact' passHref>
                             <Button as="a" variant="ghost" p={[6,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
                                 <Text fontWeight="normal" color={color[colorMode]}>
@@ -159,13 +152,6 @@ const Container = ({ children }) => {
                                 <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
                                     <Text fontWeight="normal" color={color[colorMode]}>
                                         Art
-                                    </Text>
-                                </Button>
-                            </NextLink>
-                            <NextLink href='/Projects' passHref>
-                                <Button as="a" variant="ghost" p={[6,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
-                                    <Text fontWeight="normal" color={color[colorMode]}>
-                                        Projects
                                     </Text>
                                 </Button>
                             </NextLink>

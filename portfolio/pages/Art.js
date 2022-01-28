@@ -23,8 +23,9 @@ export default function Art() {
     <Container>
       <Head>
         <title>
-          Saunt
+          Saunt - Art
         </title>
+        <link rel="shortcut icon" type="image/png" href="images/panda.png"></link>
       </Head>
 
       <Flex
@@ -64,7 +65,7 @@ export default function Art() {
               Game Concept Page
             </Text>
           </Heading>
-          <Box boxSize="md">
+          <Box boxSize="auto">
             <Flex mb={4}>
               <Image src='images/alone.png'></Image>
             </Flex>

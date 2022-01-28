@@ -23,8 +23,9 @@ export default function Contact() {
     <Container>
       <Head>
         <title>
-          Saunt
+          Saunt - Contact
         </title>
+        <link rel="shortcut icon" type="image/png" href="images/panda.png"></link>
       </Head>
 
       <Flex

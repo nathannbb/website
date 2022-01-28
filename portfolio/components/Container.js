@@ -14,6 +14,8 @@ import styled from "@emotion/styled"
 import DarkModeSwitch from './DarkModeSwitch'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {useState} from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Container = ({ children }) => {
 
@@ -21,6 +23,38 @@ const Container = ({ children }) => {
 
     const {colorMode} = useColorMode();
 
+    const LogoBox = styled.span`
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    line-height: 20px;
+    padding: 10px;
+    
+    &:hover img {
+        transform: rotate(-10deg);
+    }
+    `
+    const Logo = () => {
+
+        return(
+            <Link href="/">
+                <a>
+                    <LogoBox>
+
+                        <Image src='/images/panda.png' width={30} height={30} alt="Logo"/>
+                        
+                        <Text fontSize={24} color={color[colorMode]} style={{ textIndent: 20 }}>
+                            Saunt ()
+                        </Text>
+
+                    </LogoBox>  
+                </a>
+                
+            </Link>
+        )
+    }
     const bgColor = {
         light: '#fff6e8',
         dark: '#252525'
@@ -61,13 +95,7 @@ const Container = ({ children }) => {
             >
                 <Flex>
                     <Box>
-                        <NextLink href='/' passHref>
-                            <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
-                                <Text fontSize={24} color={color[colorMode]}>
-                                    Saunt ()
-                                </Text>
-                            </Button>
-                        </NextLink>
+                        <Logo/>
                     </Box>  
                 </Flex>
                 

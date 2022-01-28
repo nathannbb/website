@@ -43,9 +43,9 @@ const Container = ({ children }) => {
                 <a>
                     <LogoBox>
 
-                        <Image src='/images/panda.png' width={30} height={30} alt="Logo"/>
+                        <Image src='/images/Panda-Hover.png' width={35} height={35} alt="Logo"/>
                         
-                        <Text fontSize={24} color={color[colorMode]} style={{ textIndent: 20 }}>
+                        <Text fontSize={24} color={color[colorMode]} style={{ textIndent: 15 }}>
                             Saunt ()
                         </Text>
 
@@ -56,12 +56,12 @@ const Container = ({ children }) => {
         )
     }
     const bgColor = {
-        light: '#fff6e8',
+        light: '#F3F0D7',
         dark: '#252525'
     }
 
     const navHoverColor = {
-        light: '#fff6e8',
+        light: '#F3F0D7',
         dark: '#252525'
     }
     

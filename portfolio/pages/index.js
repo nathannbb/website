@@ -35,6 +35,7 @@ export default function Index() {
         <title>
           Saunt
         </title>
+        <link rel="shortcut icon" type="image/png" href="images/panda.png"></link>
       </Head>
 
       <Flex

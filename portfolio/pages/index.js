@@ -20,7 +20,7 @@ export default function Index() {
   }
 
   const navHoverColor = {
-    light: '#F3F0D7',
+    light: '#FEF5ED',
     dark: '#252525'
   }
 
@@ -45,7 +45,7 @@ export default function Index() {
         m='0 auto 2rem auto'
         maxWidth='700px'
       >
-        <Box bg={useColorModeValue('#CEE5D0','#363636')} borderRadius='lg' p={3}>
+        <Box bg={useColorModeValue('#D3E4CD','#363636')} borderRadius='lg' p={3}>
 
           Welcome to my personal portfolio website!
 

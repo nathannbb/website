@@ -56,12 +56,12 @@ const Container = ({ children }) => {
         )
     }
     const bgColor = {
-        light: '#F3F0D7',
+        light: '#FEF5ED',
         dark: '#252525'
     }
 
     const navHoverColor = {
-        light: '#F3F0D7',
+        light: '#FEF5ED',
         dark: '#252525'
     }
     
@@ -130,7 +130,7 @@ const Container = ({ children }) => {
                         aria-label='Open Menu'
                         mr={2}
                         icon={<HamburgerIcon/>}
-                        colorScheme='red'
+                        colorScheme={useColorModeValue('teal','red')}
                         display={['flex','flex','none','none']}
                         onClick={() => changeDisplay('flex')}
                     />
@@ -154,6 +154,7 @@ const Container = ({ children }) => {
                             mr={2}
                             aria-label="Close Menu"
                             icon={<CloseIcon/>}
+                            colorScheme={useColorModeValue('teal','red')}
                             onClick={() => changeDisplay('none')}
                             />
                         </Flex>

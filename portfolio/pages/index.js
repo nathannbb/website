@@ -9,6 +9,9 @@ import {
   Box,
   useColorModeValue,
   Button,
+  Link,
+  LinkBox,
+  Image
 }from '@chakra-ui/react'
 import NextLink from 'next/link'
 
@@ -85,53 +88,67 @@ export default function Index() {
           <Heading mt={6} mb={2}>
             About Me
           </Heading>
+
           <Text style={{ textIndent: 20 }}>
-            Hello! My name is Nathan Basant, throughout my life I've always had an interest in computers. Specifically, I have a love for video games and creation. As a result, my passion has lead me to the field of Software and Game Development allowing me to express my creativity to create interesting projects and solve problems. I enjoy developing my own games, software and learning new ways to improve my programming skills and challenge them too!
+            Hello! My name is Nathan Basant, throughout my life I've always had an interest in 
+            computers. Specifically, I have a love for video games and the development process. 
+            As a result, my passion has lead me to the field of Software and Game Development allowing me to express 
+            my creativity to create interesting projects and solve problems. I enjoy developing my 
+            own games, software and learning new ways to improve my programming skills and challenge 
+            them too!
           </Text>
 
           <Heading mt={6} mb={2}>
-            External Links
+            Game Development
           </Heading>
+
+          <Text style={{ textIndent: 20 }}>
+            Following my interest in Video Games, in 2019 I began learning how to develope my own games.
+            Through tutorials online, and trial and error, I began developing my very own games! My previous projects
+            and prototypes are displayed on my{' '}<NextLink href='/Games' passHref>
+              <Link color='red'>Games</Link>
+            </NextLink> page or at my itch.io!
+          </Text>
           
-          <Flex 
-          >
-            <Flex mr={2}>
-              <Box bg={useColorModeValue('#9bdfe0','#1a5354')} borderRadius='lg' p={3}>
-                <NextLink href='https://www.linkedin.com/in/nathanbasant/' passHref>
-                  <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
-                    <Text fontSize={24} color={color[colorMode]}>
-                      LinkedIn
-                    </Text>
-                  </Button>
-                </NextLink>
+          <Heading mt={6} mb={2}>
+            Art
+          </Heading>
+          <Text style={{ textIndent: 20 }}>
+
+          </Text>
+
+          <Heading mt={6} mb={2}>
+            Checkout My Other Web Pages!
+          </Heading>
+
+          <Flex >
+            <Flex mr={6}>
+              <Box boxSize='20' >
+                <Link href='https://www.linkedin.com/in/nathanbasant/' passHref>
+                  <Image src='images/linkedin.png'></Image>
+                </Link>
               </Box>
             </Flex>
             
-            <Flex mr={2}>
-              <Box bg={useColorModeValue('#9bdfe0','#1a5354')} borderRadius='lg' p={3}>
-                <NextLink href='https://saunty.itch.io/' passHref>
-                  <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
-                    <Text fontSize={24} color={color[colorMode]}>
-                      Itch.io
-                    </Text>
-                  </Button>
-                </NextLink>
+            <Flex mr={6}>
+              <Box boxSize='20' >
+                <Link href='https://github.com/nathannbb' passHref>
+                  <Image src='images/github.png'></Image>
+                </Link>
               </Box>
             </Flex>
 
             <Flex>
-              <Box bg={useColorModeValue('#9bdfe0','#1a5354')} borderRadius='lg' p={3}>
-                <NextLink href='https://github.com/nathannbb' passHref>
-                  <Button as="a" variant="ghost" p={[1,2,4]} _hover={{backgroundColor: navHoverColor[colorMode]}}>
-                    <Text fontSize={24} color={color[colorMode]}>
-                        GitHub
-                    </Text>
-                  </Button>
-                </NextLink>
+              <Box boxSize='20' >
+                <Link href='https://saunty.itch.io/' passHref>
+                  <Image src='images/itchio.png'></Image>
+                </Link>
               </Box>
             </Flex>
           </Flex>
+
         </Flex>
+
       </Stack>
 
     </Container>

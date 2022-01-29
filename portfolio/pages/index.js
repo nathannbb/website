@@ -32,6 +32,12 @@ export default function Index() {
     dark: 'white'
   }
 
+  const linkedin = `images/linkedin${useColorModeValue('light','dark')}.png`
+
+  const github = `images/github${useColorModeValue('light','dark')}.png`
+
+  const itchio = `images/itchio${useColorModeValue('light','dark')}.png`
+
   return (
     <Container>
       <Head>
@@ -103,7 +109,7 @@ export default function Index() {
           </Heading>
 
           <Text style={{ textIndent: 20 }}>
-            Following my interest in Video Games, in 2019 I began learning how to develope my own games.
+            Following my interest in Video Games, in 2019 I began learning how to develop my own games.
             Through tutorials online, and trial and error, I began developing my very own games! My previous projects
             and prototypes are displayed on my{' '}<NextLink href='/Games' passHref>
               <Link color='red'>Games</Link>
@@ -125,7 +131,7 @@ export default function Index() {
             <Flex mr={6}>
               <Box boxSize='20' >
                 <Link href='https://www.linkedin.com/in/nathanbasant/' passHref>
-                  <Image src='images/linkedin.png'></Image>
+                  <Image src={linkedin}></Image>
                 </Link>
               </Box>
             </Flex>
@@ -133,7 +139,7 @@ export default function Index() {
             <Flex mr={6}>
               <Box boxSize='20' >
                 <Link href='https://github.com/nathannbb' passHref>
-                  <Image src='images/github.png'></Image>
+                  <Image src={github}></Image>
                 </Link>
               </Box>
             </Flex>
@@ -141,7 +147,7 @@ export default function Index() {
             <Flex>
               <Box boxSize='20' >
                 <Link href='https://saunty.itch.io/' passHref>
-                  <Image src='images/itchio.png'></Image>
+                  <Image src={itchio}></Image>
                 </Link>
               </Box>
             </Flex>

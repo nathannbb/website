@@ -25,7 +25,7 @@ export default function Contact() {
         <title>
           Saunt - Contact
         </title>
-        <link rel="shortcut icon" type="image/png" href="images/panda.png"></link>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"></link>
       </Head>
 
       <Flex

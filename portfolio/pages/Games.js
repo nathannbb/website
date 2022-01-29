@@ -26,7 +26,7 @@ export default function Games() {
         <title>
           Saunt - Games
         </title>
-        <link rel="shortcut icon" type="image/png" href="images/panda.png"></link>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"></link>
       </Head>
 
       <Stack

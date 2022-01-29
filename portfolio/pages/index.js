@@ -117,13 +117,6 @@ export default function Index() {
               <Link color='red'>itch.io</Link>
             </NextLink>!
           </Text>
-          
-          <Heading mt={6} mb={2}>
-            Art
-          </Heading>
-          <Text style={{ textIndent: 20 }}>
-
-          </Text>
 
           <Heading mt={6} mb={2}>
             Checkout My Other Web Pages!

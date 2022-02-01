@@ -113,9 +113,9 @@ export default function Index() {
             Through tutorials online, and trial and error, I began developing my very own games! My previous projects
             and prototypes are displayed on my{' '}<NextLink href='/Games' passHref>
               <Link color='red'>Games</Link>
-            </NextLink> page or at my {' '}<NextLink href='/https://saunty.itch.io/' passHref>
+            </NextLink> page or at my {' '}<Link href='/https://saunty.itch.io/' passHref>
               <Link color='red'>itch.io</Link>
-            </NextLink>!
+            </Link>!
           </Text>
 
           <Heading mt={6} mb={2}>
